@@ -12,7 +12,7 @@ const GridLayout = ({ children, columnsAmount, rowHeight }: GridLayoutProps): JS
         const { current } = gridRef
         let gridWidth = current!.getBoundingClientRect().width
         setElementWidth(Math.round(gridWidth / columnsAmount));
-    }, [])
+    }, [columnsAmount, rowHeight, gridRef])
 
     return (
         <Grid
