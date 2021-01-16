@@ -7,7 +7,7 @@ const colors = ['green', 'yellow', 'red', 'blue', 'orange']
 const elements: configItems[] = colors.map((color, index) => ({
   component: <div>{index}</div>,
   style: {
-    width: index % 2 == 0 ? 100 * index : undefined,
+    width: index % 2 === 0 ? 100 * index : undefined,
     height: 20 * Math.pow(index, 2) + 30,
     backgroundColor: color
   }
